@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&family=Heebo:wght@800&family=Hind&family=Tajawal:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1485c0d30b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body class="main">
+    <header class="Header">
+        <h1 class="tituloContacto">Quienes somos?</h1>
+        <div class="topnav" id="myTopnav">
+          <a href="./index.html" class="active">Menú</a>
+          <a href="./index.html">Inicio</a>
+          <a href="./novedades.html">Eventos</a>
+          <a href="./eventos.html">Multimedia</a>
+          <a href="./contacto.html">Quiénes somos</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+     </header>
+     <main class="main">
+      <section>
+        <div class="video-containerContacto">
+          <div class="TextoBannerContacto">
+            <div class="contenidoBannerContacto">
+            <p>Por si no lo sabias... atrás de SUMA estamos nosotros! <br> Luego de mucho esfuerzo y dedicación pudimos crear este increíble espacio en donde artistas de todo tipo y color pueden exponer su arte, tanto visual, como auditivo o culinario! <br> Después de tantas horas de trabajo estamos orgullosos de recibirlos para dejar en sus memorias un momento inolvidable. Atentamente, equipo SUMA.
+            </p>
+          </div>
+      
+        </div>
+          <div class="BannerContacto">
+      <div class="botonBannerContacto">
+    
+    </div>
+    </div>
+
+  
+        </div>
+      </section>
+  <section class="TituloConstruccion">
+    <div >
+      <h3 class="TituloConstruccion">Esto fue un poco de la construcción de SUMA</h3>
+    </div>
+  </section>
+
+  <section class="slidercontacto">
+    <br>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="./multimedia/quienesSomos1.jpeg" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="./multimedia/quienesSomos3.jpeg" style="width:100%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="./multimedia/quienesSomos4.jpeg" style="width:100%">
+   
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+</section>
+
+<section class="construccion">
+
+        <div class="mapa-ubicacion">
+            <h3 >Acá podés ver nuestra ubicación! Te esperamos</h3>
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.725533927853!2d-58.43192142437291!3d-34.585810772960706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb584198b108b%3A0x3caad7c5b4ad41c5!2sSuma%20Caf%C3%A9!5e0!3m2!1ses-419!2sar!4v1684074655647!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapaUbicacion"></iframe>
+                    </div>
+                  </section>
+     </main>
+     <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <h4>Síguenos en redes sociales</h4>
+              <p>¡Mantente informado sobre nuestras últimas noticias y promociones!</p>
+              <a href="https://www.facebook.com/TuPaginaDeFacebook" target="_blank"><i class="fab fa-facebook-square" style="color:#d6a743;"></i></a>
+              <a href="https://twitter.com/Pauuloreti/status/1614019987508809753?lang=es" target="_blank"><i class="fab fa-twitter-square"style="color:#d6a743;"></i></a>
+              <a href="https://www.instagram.com/suma.cafe/?hl=es" target="_blank"><i class="fab fa-instagram-square"style="color:#d6a743;"></i></a>
+            </div>
+            <div class="col-sm-6">
+              <h4>Contacto</h4>
+              <p>¿Tienes alguna pregunta o comentario? Contáctanos por correo electrónico.</p>
+              <span><i class="fas fa-envelope"></i> info@sumacafé.com</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+        
+</body>
+</html>
